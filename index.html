@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Park Bites — Legal & Support</title>
+    <meta name="description" content="Legal and support information for Theme Park Bites, the honest food guide for every Disney and Universal theme park." />
+    <style>
+      :root {
+        --bg-a: #0A1628;
+        --bg-b: #1B3758;
+        --card: rgba(255, 255, 255, 0.96);
+        --border: rgba(255, 255, 255, 0.4);
+        --text: #0A1628;
+        --text-soft: rgba(10, 22, 40, 0.72);
+        --accent: #C88216;
+        --gold: #F5A623;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 12% 18%, rgba(245, 166, 35, 0.22), transparent 38%),
+          radial-gradient(circle at 88% 82%, rgba(255, 107, 107, 0.18), transparent 34%),
+          linear-gradient(160deg, var(--bg-a) 0%, var(--bg-b) 100%);
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 56px 20px 72px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 32px;
+        padding: 40px 32px;
+        box-shadow: 0 28px 70px rgba(10, 22, 40, 0.35);
+        backdrop-filter: blur(16px);
+      }
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.25rem, 5vw, 3.75rem);
+        line-height: 1;
+      }
+      p {
+        color: var(--text-soft);
+        font-size: 1rem;
+        line-height: 1.72;
+      }
+      .link-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 28px;
+      }
+      a.tile {
+        display: block;
+        text-decoration: none;
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(200, 130, 22, 0.18);
+        border-radius: 24px;
+        padding: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      a.tile:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 32px rgba(10, 22, 40, 0.16);
+      }
+      a.tile strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+        color: var(--accent);
+      }
+      a.tile span {
+        color: var(--text-soft);
+        line-height: 1.55;
+      }
+      footer {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 0.85rem;
+        margin-top: 36px;
+      }
+      footer a { color: rgba(255, 255, 255, 0.86); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <p class="eyebrow">Theme Park Bites</p>
+        <h1>Legal &amp; Support</h1>
+        <p>Public legal and support information for Theme Park Bites, the honest food guide for every Disney and Universal theme park. Rate 988 menu items across 146 venues, watch Theme Park Shark bite reviews, and share your own reviews with fans around the world.</p>
+        <div class="link-grid">
+          <a class="tile" href="/theme-park-bites-legal/privacy-policy/">
+            <strong>Privacy Policy</strong>
+            <span>What data the app collects, how it is used, and the choices you have.</span>
+          </a>
+          <a class="tile" href="/theme-park-bites-legal/support/">
+            <strong>Support</strong>
+            <span>Help with reviews, account deletion, subscriptions, and reporting a problem.</span>
+          </a>
+        </div>
+      </section>
+      <footer>
+        A <a href="https://themeparkshark.com">Theme Park Shark</a> app.
+      </footer>
+    </main>
+  </body>
+</html>
